@@ -2,6 +2,10 @@ name: "Check branch name is compliant with conventional commits"
 
 on:
     workflow_call:
+        inputs:
+            branch-name:
+                required: true
+                type: string
 
 jobs:
   check-branch-name:
@@ -14,5 +18,8 @@ jobs:
         run: |
           chmod +x .github/scripts/branch_name_check.sh
           ./.github/scripts/branch_name_check.sh
+
+        env:
+            BRANCH_NAME: ${{ inputs.branch-name }}
 
         shell: bash

@@ -1,5 +1,3 @@
-BRANCH_NAME=${GITHUB_REF#refs/heads/}
-
 if [[ $BRANCH_NAME == bugfix-* ]] || [[ $BRANCH_NAME == feat-* ]]; then
     echo "Branch name '$BRANCH_NAME' matches required pattern (bugfix-* or feat-*)"
 else
