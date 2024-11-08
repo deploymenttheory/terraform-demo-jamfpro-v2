@@ -26,6 +26,12 @@ resource "jamfpro_category" "category_6" {
 
 resource "jamfpro_category" "category_7" {
   count = 25
-  name = "Small Volume Test - ${count.index}"
+  name  = "Small Volume Test - ${count.index}"
 }
+
+resource "jamfpro_category" "category_8" {
+  count = 200
+  name  = "Large Volume Test - ${count.index}"
+}
+
 
