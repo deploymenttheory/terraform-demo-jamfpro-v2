@@ -5,6 +5,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.0.0](https://github.com/deploymenttheory/terraform-demo-jamfpro-v2/compare/v1.0.0...v2.0.0) (2024-11-08)
+
+
+### ⚠ BREAKING CHANGES
+
+* burn it all ([#64](https://github.com/deploymenttheory/terraform-demo-jamfpro-v2/issues/64))
+
+### Bug Fixes
+
+* burn it all ([#64](https://github.com/deploymenttheory/terraform-demo-jamfpro-v2/issues/64)) ([3aa6f8d](https://github.com/deploymenttheory/terraform-demo-jamfpro-v2/commit/3aa6f8d94d57ab710cd2ca70dec9bd9e8894242d))
+* oops ([#66](https://github.com/deploymenttheory/terraform-demo-jamfpro-v2/issues/66)) ([9908d6b](https://github.com/deploymenttheory/terraform-demo-jamfpro-v2/commit/9908d6be75a8579bf93793f8f0674672daeac65b))
+
 ## [1.0.0](https://github.com/deploymenttheory/terraform-demo-jamfpro-v2/compare/v0.11.0...v1.0.0) (2024-11-08)
 
 
