@@ -28,3 +28,13 @@ resource "jamfpro_building" "jamfpro_building_apple_eu_hq" {
   country         = "United Kingdom"
 }
 
+resource "jamfpro_building" "jamfpro_building_london_eye" {
+  name            = "tf-demo-v2-London-Eye"
+  street_address1 = "Riverside Building"
+  street_address2 = "County Hall"
+  city            = "London"
+  state_province  = "London"
+  zip_postal_code = "SE1 7PB"
+  country         = "United Kingdom"
+}
+
