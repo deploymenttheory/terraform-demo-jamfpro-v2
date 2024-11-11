@@ -5,6 +5,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.1.0](https://github.com/deploymenttheory/terraform-demo-jamfpro-v2/compare/v2.0.0...v2.1.0) (2024-11-11)
+
+
+### Features
+
+* added london eye ([#68](https://github.com/deploymenttheory/terraform-demo-jamfpro-v2/issues/68)) ([b7fcc53](https://github.com/deploymenttheory/terraform-demo-jamfpro-v2/commit/b7fcc53025549070584dd33079f5d16c990a635e))
+* baselevel config ([9913caa](https://github.com/deploymenttheory/terraform-demo-jamfpro-v2/commit/9913caa659b17c8d77f9a6e5da3211b738a38b71))
+
 ## [2.0.0](https://github.com/deploymenttheory/terraform-demo-jamfpro-v2/compare/v1.0.0...v2.0.0) (2024-11-08)
 
 
