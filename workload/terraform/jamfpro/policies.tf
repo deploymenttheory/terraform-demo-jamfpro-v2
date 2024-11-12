@@ -25,7 +25,7 @@ resource "jamfpro_policy" "jamfpro_policy_script_echo" {
   scope {
     all_computers = false
     all_jss_users = false
-    building_ids = [jamfpro_building.jamfpro_building_apple_eu_hq.id]
+    building_ids  = [jamfpro_building.jamfpro_building_apple_eu_hq.id]
   }
 
   self_service {

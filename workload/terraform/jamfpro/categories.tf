@@ -1,11 +1,11 @@
 resource "jamfpro_category" "jamfpro_category_hr" {
-    name = "HR"
+  name = "HR"
 }
 
 resource "jamfpro_category" "jamfpro_category_engineering" {
-    name = "Engineering"
+  name = "Engineering"
 }
 
 resource "jamfpro_category" "jamfpro_category_finance" {
-    name = "Finance"
+  name = "Finance"
 }

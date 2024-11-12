@@ -38,3 +38,12 @@ resource "jamfpro_building" "jamfpro_building_london_eye" {
   country         = "United Kingdom"
 }
 
+resource "jamfpro_building" "jamfpro_building_us_embassy" {
+  name            = "tf-demo-v2-us-embassy"
+  street_address1 = "33 Nine Elms Ln"
+  street_address2 = "Nine Elms"
+  city            = "London"
+  state_province  = "London"
+  zip_postal_code = "SW11 7US"
+  country         = "United Kingdom"
+}
