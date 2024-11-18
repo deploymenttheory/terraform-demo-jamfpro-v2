@@ -25,7 +25,7 @@ resource "jamfpro_policy" "jamfpro_policy_script_echo" {
   scope {
     all_computers = false
     all_jss_users = false
-    building_ids  = [jamfpro_building.jamfpro_building_apple_eu_hq.id]
+    building_ids  = [jamfpro_building.building["apple_park"].id]
   }
 
   self_service {
@@ -40,7 +40,7 @@ resource "jamfpro_policy" "jamfpro_policy_script_echo" {
 
   payloads {
     scripts {
-      id          = jamfpro_script.jamfpro_script_echo.id
+      id          = jamfpro_script.jamfpro_script_2.id
       priority    = "After"
       parameter4  = ""
       parameter5  = ""

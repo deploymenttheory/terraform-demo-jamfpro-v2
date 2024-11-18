@@ -1,11 +1,14 @@
-resource "jamfpro_category" "jamfpro_category_hr" {
-  name = "HR"
-}
+resource "jamfpro_category" "category" {
+  for_each = toset([
+    "HR",
+    "Engineering",
+    "Finance",
+    "Marketing",
+    "Legal",
+    "Operations",
+    "Facilities",
+    "Security"
+  ])
 
-resource "jamfpro_category" "jamfpro_category_engineering" {
-  name = "Engineering"
-}
-
-resource "jamfpro_category" "jamfpro_category_finance" {
-  name = "Finance"
+  name = each.key
 }
