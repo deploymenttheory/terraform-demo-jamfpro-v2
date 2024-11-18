@@ -55,3 +55,4 @@ resource "jamfpro_building" "building" {
   zip_postal_code = each.value.zip_postal_code
   country         = each.value.country
 }
+

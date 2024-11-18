@@ -5,6 +5,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.2.0](https://github.com/deploymenttheory/terraform-demo-jamfpro-v2/compare/v2.1.0...v2.2.0) (2024-11-12)
+
+
+### Features
+
+* added building, us emabassy ([#70](https://github.com/deploymenttheory/terraform-demo-jamfpro-v2/issues/70)) ([8751ff7](https://github.com/deploymenttheory/terraform-demo-jamfpro-v2/commit/8751ff725f805d4ccde0bf59be423de5dfe7dde2))
+
 ## [2.1.0](https://github.com/deploymenttheory/terraform-demo-jamfpro-v2/compare/v2.0.0...v2.1.0) (2024-11-11)
 
 

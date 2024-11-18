@@ -26,6 +26,7 @@ resource "jamfpro_policy" "jamfpro_policy_script_echo" {
     all_computers = false
     all_jss_users = false
     building_ids  = [jamfpro_building.building["apple_park"].id]
+
   }
 
   self_service {
