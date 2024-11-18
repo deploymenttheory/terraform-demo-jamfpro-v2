@@ -1,6 +1,7 @@
 
 resource "jamfpro_policy" "jamfpro_policy_script_echo" {
-  name                          = "tf-demo-policy-script-echo"
+  count = 10
+  name                          = "tf-demo-policy-script-${count.index}"
   enabled                       = false
   trigger_checkin               = false
   trigger_enrollment_complete   = false
