@@ -5,6 +5,26 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.0.0](https://github.com/deploymenttheory/terraform-demo-jamfpro-v2/compare/v2.3.0...v3.0.0) (2024-11-18)
+
+
+### ⚠ BREAKING CHANGES
+
+* 10 policies
+
+### Features
+
+* 10 policies ([20debe9](https://github.com/deploymenttheory/terraform-demo-jamfpro-v2/commit/20debe94fd406c3c95b7c89d5d0aa3a18535b23e))
+* new res id ([#78](https://github.com/deploymenttheory/terraform-demo-jamfpro-v2/issues/78)) ([922ece3](https://github.com/deploymenttheory/terraform-demo-jamfpro-v2/commit/922ece300090605a2d1166f56cc5fd5428f4283e))
+* policy sd ([#79](https://github.com/deploymenttheory/terraform-demo-jamfpro-v2/issues/79)) ([1ca6018](https://github.com/deploymenttheory/terraform-demo-jamfpro-v2/commit/1ca6018f7a8bfe7699f602a81da1fb48c4a59d52))
+
+
+### Bug Fixes
+
+* 1 &gt; 10 ([#80](https://github.com/deploymenttheory/terraform-demo-jamfpro-v2/issues/80)) ([c9aeaf0](https://github.com/deploymenttheory/terraform-demo-jamfpro-v2/commit/c9aeaf006b33e2005035c22e7f560d13f85f71ed))
+* back to 1 ([#77](https://github.com/deploymenttheory/terraform-demo-jamfpro-v2/issues/77)) ([2c8fb71](https://github.com/deploymenttheory/terraform-demo-jamfpro-v2/commit/2c8fb7183082d12211a494f5bc229a8056671944))
+* removed 10 ([#81](https://github.com/deploymenttheory/terraform-demo-jamfpro-v2/issues/81)) ([1c11f60](https://github.com/deploymenttheory/terraform-demo-jamfpro-v2/commit/1c11f60a5a0a1b3d45858bb8bad8d0a00eb7d562))
+
 ## [2.3.0](https://github.com/deploymenttheory/terraform-demo-jamfpro-v2/compare/v2.2.0...v2.3.0) (2024-11-18)
 
 
