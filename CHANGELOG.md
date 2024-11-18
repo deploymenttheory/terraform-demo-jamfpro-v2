@@ -5,6 +5,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.3.0](https://github.com/deploymenttheory/terraform-demo-jamfpro-v2/compare/v2.2.0...v2.3.0) (2024-11-18)
+
+
+### Features
+
+* added aerospace category ([#73](https://github.com/deploymenttheory/terraform-demo-jamfpro-v2/issues/73)) ([cdd453e](https://github.com/deploymenttheory/terraform-demo-jamfpro-v2/commit/cdd453e708d4af5875bc5f1abdc7fc0d036e9e50))
+
 ## [2.2.0](https://github.com/deploymenttheory/terraform-demo-jamfpro-v2/compare/v2.1.0...v2.2.0) (2024-11-12)
 
 
