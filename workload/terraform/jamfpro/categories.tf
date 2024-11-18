@@ -7,7 +7,8 @@ resource "jamfpro_category" "category" {
     "Legal",
     "Operations",
     "Facilities",
-    "Security"
+    "Security",
+    "Aerospace"
   ])
 
   name = each.key
