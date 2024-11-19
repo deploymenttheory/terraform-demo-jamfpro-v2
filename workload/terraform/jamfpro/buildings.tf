@@ -24,16 +24,16 @@ variable "buildings" {
       zip_postal_code = "55401"
       country         = "The United States of America"
     },
-    # "apple_battersea" = {
-    #   street_address1 = "Ground Floor, Turbine Hall A, Circus Rd W, Nine Elms"
-    #   street_address2 = "Suite 1100"
-    #   city            = "London"
-    #   state_province  = "London"
-    #   zip_postal_code = "SW11 8AL"
-    #   country         = "United Kingdom"
-    # },
+    "apple_battersea" = {
+      street_address1 = "Ground Floor, Turbine Hall A, Circus Rd W, Nine Elms"
+      street_address2 = "Suite 1100"
+      city            = "London"
+      state_province  = "London"
+      zip_postal_code = "SW11 8AL"
+      country         = "United Kingdom"
+    },
     "us_embassy" = {
-      street_address1 = "33 Nine Elms Ln"
+      street_address1 = "33 Nine Elms Ln - apple"
       street_address2 = "Nine Elms"
       city            = "London"
       state_province  = "London"
