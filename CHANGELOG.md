@@ -5,6 +5,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.1.0](https://github.com/deploymenttheory/terraform-demo-jamfpro-v2/compare/v3.0.0...v3.1.0) (2024-11-19)
+
+
+### Features
+
+* app installer teamviewer 15 ([#82](https://github.com/deploymenttheory/terraform-demo-jamfpro-v2/issues/82)) ([c984ea8](https://github.com/deploymenttheory/terraform-demo-jamfpro-v2/commit/c984ea8e66e2a54ec314c4a664aac9f8e659799e))
+
 ## [3.0.0](https://github.com/deploymenttheory/terraform-demo-jamfpro-v2/compare/v2.3.0...v3.0.0) (2024-11-18)
 
 
