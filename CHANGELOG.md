@@ -5,6 +5,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.1.1](https://github.com/deploymenttheory/terraform-demo-jamfpro-v2/compare/v3.1.0...v3.1.1) (2024-11-19)
+
+
+### Bug Fixes
+
+* removed apple battersea ([#84](https://github.com/deploymenttheory/terraform-demo-jamfpro-v2/issues/84)) ([118ae14](https://github.com/deploymenttheory/terraform-demo-jamfpro-v2/commit/118ae14ce4112fe2482f868aab4d8a4dcc5aad8b))
+
 ## [3.1.0](https://github.com/deploymenttheory/terraform-demo-jamfpro-v2/compare/v3.0.0...v3.1.0) (2024-11-19)
 
 
