@@ -40,8 +40,6 @@ variable "buildings" {
       zip_postal_code = "SW11 7US"
       country         = "United Kingdom"
     },
-
-
   }
 }
 
