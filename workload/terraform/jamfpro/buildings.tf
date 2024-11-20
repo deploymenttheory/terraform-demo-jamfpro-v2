@@ -40,6 +40,14 @@ variable "buildings" {
       zip_postal_code = "SW11 7US"
       country         = "United Kingdom"
     },
+    "Cheese" = {
+      street_address1 = "Cake"
+      street_address2 = "Sausage"
+      city            = "London"
+      state_province  = "London"
+      zip_postal_code = "SW11 7US"
+      country         = "United Kingdom"
+    },
   }
 }
 
