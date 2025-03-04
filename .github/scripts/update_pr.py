@@ -39,7 +39,7 @@ ENV_VARS = [
 ]
 
 if any(i == "" or i == None for i in ENV_VARS):
-    raise KeyError(f"one or more env vars are empty: {ENV_VARS}")
+    raise KeyError(f"one or more env vars are empty")
 
 
 # Global GH connection
@@ -68,7 +68,7 @@ def get_pr():
     """
 
     target_pr_id = TARGET_PR_NUMBER
-    print(f"LOG: {target_pr_id}")
+
     try:
         repo = GH.get_repo(REPO)
         pr = repo.get_pull(int(target_pr_id))
@@ -113,9 +113,15 @@ def update_pr_with_text(pr: PullRequest):
         >>> pr = get_pr()
         >>> update_pr_with_text(pr)  # Adds formatted JSON comment(s) to PR
     """
+    artifact = open_artifact(ARTIFACT_PATH, formatted_string=True)
+    
+    comments = f"""
+    Run Status: {artifact["plan_response"]["status"]}
+    [link]({artifact["plan_response"]["run_link"]})
+    \n
+    """
 
-
-    comments = wrap_json_markdown(open_artifact(ARTIFACT_PATH, formatted_string=True))
+    comments += wrap_json_markdown(artifact)
 
     try:
         pr.create_issue_comment(comments)
