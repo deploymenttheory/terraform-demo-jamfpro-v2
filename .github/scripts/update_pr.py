@@ -22,7 +22,7 @@ import os
 import sys
 import github
 from github.GithubException import GithubException
-import github.PullRequest
+from github.PullRequest import PullRequest
 sys.path.append(".github/scripts")
 from shared import wrap_json_markdown, open_artifact
 
@@ -80,6 +80,7 @@ def get_pr():
     except GithubException as e:
         print(f"GitHub API error: {e}")
         raise
+
     except Exception as e:
         print(f"Unexpected error: {e}")
         raise
@@ -88,7 +89,7 @@ def get_pr():
 
 
 
-def update_pr_with_text(pr: github.PullRequest):
+def update_pr_with_text(pr: PullRequest):
     """
     Updates a GitHub Pull Request by adding comments containing JSON data from outputs.json.
 
@@ -125,24 +126,6 @@ def update_pr_with_text(pr: github.PullRequest):
 
 
 def main():
-    """
-    Main entry point that retrieves a GitHub Pull Request and updates it with JSON data.
-
-    This function orchestrates the workflow by:
-    1. Retrieving a PR using the ID from outputs.json
-    2. Adding formatted JSON comment(s) to the PR
-
-    Raises:
-        GithubException: If PR cannot be found or updated
-        FileNotFoundError: If required files are missing
-        Exception: For any other unexpected errors
-
-    Dependencies:
-        - Requires get_pr() and update_pr_with_text() functions
-        - Requires properly configured GitHub authentication
-        - Requires outputs.json file with required fields
-    """
-
     update_pr_with_text(get_pr())
 
 
