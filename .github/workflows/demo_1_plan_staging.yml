@@ -26,7 +26,6 @@ jobs:
 
   terraform-upload-config-and-plan:
     needs: check-branch-name
-    environment: 'staging-planner'
     runs-on: ubuntu-latest
     env:
       TF_API_KEY: ${{ secrets.TF_API_KEY }}
@@ -43,7 +42,7 @@ jobs:
         id: upload-config
         with:
           token: ${{ secrets.TF_API_KEY }}
-          workspace: ${{ vars.TF_WORKSPACE }}
+          workspace: ${{ vars.TF_WORKSPACE_STAGING }}
           directory: "workload/terraform/jamfpro"
           speculative: true
 
@@ -53,7 +52,7 @@ jobs:
         uses: hashicorp/tfc-workflows-github/actions/create-run@v1.3.1
         with:
           token: ${{ secrets.TF_API_KEY }}
-          workspace: ${{ vars.TF_WORKSPACE }}
+          workspace: ${{ vars.TF_WORKSPACE_STAGING }}
           configuration_version: ${{ steps.upload-config.outputs.configuration_version_id }}
           plan_only: true
 
