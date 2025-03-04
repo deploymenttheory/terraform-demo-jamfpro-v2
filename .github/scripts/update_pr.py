@@ -113,7 +113,7 @@ def update_pr_with_text(pr: PullRequest):
         >>> pr = get_pr()
         >>> update_pr_with_text(pr)  # Adds formatted JSON comment(s) to PR
     """
-    artifact = open_artifact(ARTIFACT_PATH, formatted_string=True)
+    artifact = open_artifact(ARTIFACT_PATH)
     
     comments = f"""
     Run Status: {artifact["plan_response"]["status"]}
