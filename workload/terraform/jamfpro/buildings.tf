@@ -17,7 +17,7 @@ variable "buildings" {
     #   country         = "The United States of America"
     # },
     "jamf_hq" = {
-      street_address1 = "100 Washington Ave S"
+      street_address1 = "100 Washington Ave S Cheese"
       street_address2 = "Suite 1100"
       city            = "Minneapolis"
       state_province  = "Minnesota"
