@@ -13,3 +13,5 @@
 #
 **/.terraform/
 *.terraform.lock.hcl
+
+.venv/
