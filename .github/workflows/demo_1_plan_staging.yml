@@ -2,21 +2,10 @@ name: Demo | Workflow 1 - Plan Targetted at Staging
 run-name: Speculative Plan | Target - Staging
 
 on:
-  # Manual trigger options - debug only.
-  workflow_dispatch:
-    inputs:
-      environment:
-        description: "Target RTL Environment"
-        required: true
-        type: choice
-        options:
-          - sandbox
-          - staging
-          - production
-  
+
   pull_request:
     types: [opened, reopened, synchronize] # Synchronize is when a PR is updated by new commits.
-    
+
     # if Target branch is Main
     branches:
       - main
@@ -37,7 +26,7 @@ jobs:
 
   terraform-upload-config-and-plan:
     needs: check-branch-name
-    environment: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.environment || 'staging' }}
+    environment: 'staging-planner'
     runs-on: ubuntu-latest
     env:
       TF_API_KEY: ${{ secrets.TF_API_KEY }}
