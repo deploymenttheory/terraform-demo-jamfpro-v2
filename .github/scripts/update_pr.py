@@ -118,12 +118,12 @@ def update_pr_with_text(pr: PullRequest):
     artifact = open_artifact(ARTIFACT_PATH)
 
     comment_lines = [
-        f"Plan Status: {artifact["plan_response"]["status"]}",
-        f"Run Link  [link]({artifact["plan_response"]["run_link"]})"
-        f"Add: {artifact["plan_output"]["add"]}",
-        f"Change: {artifact["plan_output"]["change"]}",
-        f"Destroy: {artifact["plan_output"]["destroy"]}",
-        f"Raw response:\n {wrap_json_markdown(json.dumps(artifact, indent=2))}"
+        f"**Plan Status:** {artifact["plan_response"]["status"]}",
+        f"**Run Link:**  [link]({artifact["plan_response"]["run_link"]})"
+        f"**Add:** {artifact["plan_output"]["add"]}",
+        f"**Change:** {artifact["plan_output"]["change"]}",
+        f"**Destroy:** {artifact["plan_output"]["destroy"]}",
+        f"**Raw response:**\n {wrap_json_markdown(json.dumps(artifact, indent=2))}"
     ]
 
     comment = "\n".join(comment_lines)
