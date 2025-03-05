@@ -123,7 +123,7 @@ def update_pr_with_text(pr: PullRequest):
     \n\n
     """
 
-    comment_json = wrap_json_markdown(json.dumps(artifact))
+    comment_json = wrap_json_markdown(json.dumps(artifact, indent=2))
 
     try:
         pr.get_commits()
