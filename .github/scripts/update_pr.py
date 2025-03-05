@@ -116,14 +116,20 @@ def update_pr_with_text(pr: PullRequest):
         >>> update_pr_with_text(pr)  # Adds formatted JSON comment(s) to PR
     """
     artifact = open_artifact(ARTIFACT_PATH)
-    
-    comment_preview = f"Run Status: {artifact["plan_response"]["status"]}\n[link]({artifact["plan_response"]["run_link"]})\n"
 
-    comment_json = "Raw resposne:\n" + wrap_json_markdown(json.dumps(artifact, indent=2))
+    comment_lines = [
+        f"Plan Status: {artifact["plan_response"]["status"]}",
+        f"Run Link  link]({artifact["plan_response"]["run_link"]})"
+        f"Add: {artifact["plan_output"]["add"]}",
+        f"Change: {artifact["plan_output"]["change"]}",
+        f"Destroy: {artifact["plan_output"]["destroy"]}",
+        f"Raw response:\n {wrap_json_markdown(json.dumps(artifact, indent=2))}"
+    ]
+
+    comment = "\n".join(comment_lines)
 
     try:
-        pr.get_commits()
-        [pr.create_issue_comment(i) for i in [comment_preview, comment_json]]
+        pr.create_issue_comment(comment)
 
 
     except GithubException as e:
