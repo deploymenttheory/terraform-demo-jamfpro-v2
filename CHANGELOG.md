@@ -5,6 +5,21 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.6.0](https://github.com/deploymenttheory/terraform-demo-jamfpro-v2/compare/v3.5.0...v3.6.0) (2025-03-05)
+
+
+### Features
+
+* added a new building ([#108](https://github.com/deploymenttheory/terraform-demo-jamfpro-v2/issues/108)) ([fd7d63e](https://github.com/deploymenttheory/terraform-demo-jamfpro-v2/commit/fd7d63ee716fb98ff59f46182786972b6fb761f8))
+
+
+### Bug Fixes
+
+* new building to test script changes ([#107](https://github.com/deploymenttheory/terraform-demo-jamfpro-v2/issues/107)) ([84da0db](https://github.com/deploymenttheory/terraform-demo-jamfpro-v2/commit/84da0db91050de9d498a88ae528f5f8183c1710b))
+* removed arg ([#103](https://github.com/deploymenttheory/terraform-demo-jamfpro-v2/issues/103)) ([6d4dde3](https://github.com/deploymenttheory/terraform-demo-jamfpro-v2/commit/6d4dde3b14921b4b7fc9b445e7586ba1590c4bc3))
+* removed arg ([#104](https://github.com/deploymenttheory/terraform-demo-jamfpro-v2/issues/104)) ([b08a2c4](https://github.com/deploymenttheory/terraform-demo-jamfpro-v2/commit/b08a2c4462bef14b7853331bb512070cafb86bb3))
+* renamed a building ([#101](https://github.com/deploymenttheory/terraform-demo-jamfpro-v2/issues/101)) ([99a38db](https://github.com/deploymenttheory/terraform-demo-jamfpro-v2/commit/99a38db4ada8ecf4d052fd1da5d1907f01ed9fb0))
+
 ## [3.5.0](https://github.com/deploymenttheory/terraform-demo-jamfpro-v2/compare/v3.4.0...v3.5.0) (2025-03-04)
 
 
