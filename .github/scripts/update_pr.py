@@ -117,11 +117,7 @@ def update_pr_with_text(pr: PullRequest):
     """
     artifact = open_artifact(ARTIFACT_PATH)
     
-    comment_preview = f"""
-    Run Status: {artifact["plan_response"]["status"]}
-    [link]({artifact["plan_response"]["run_link"]})
-    \n\n
-    """
+    comment_preview = f"Run Status: {artifact["plan_response"]["status"]}\n[link]({artifact["plan_response"]["run_link"]})\n"
 
     comment_json = wrap_json_markdown(json.dumps(artifact, indent=2))
 
