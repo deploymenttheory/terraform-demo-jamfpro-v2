@@ -8,14 +8,14 @@ variable "buildings" {
     #   zip_postal_code = "SE1 7PB"
     #   country         = "United Kingdom"
     # },
-    # "apple_park" = {
-    #   street_address1 = "The McIntosh Tree"
-    #   street_address2 = "One Apple Park Way"
-    #   city            = "Cupertino"
-    #   state_province  = "California"
-    #   zip_postal_code = "95014"
-    #   country         = "The United States of America"
-    # },
+    "apple_park" = {
+      street_address1 = "The McIntosh Tree"
+      street_address2 = "One Apple Park Way"
+      city            = "Cupertino"
+      state_province  = "California"
+      zip_postal_code = "95014"
+      country         = "The United States of America"
+    },
     "jamf_hq" = {
       street_address1 = "100 Washington Ave S Cheese"
       street_address2 = "Suite 1100"
