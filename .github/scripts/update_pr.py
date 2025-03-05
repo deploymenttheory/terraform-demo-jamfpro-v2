@@ -119,7 +119,7 @@ def update_pr_with_text(pr: PullRequest):
     
     comment_preview = f"Run Status: {artifact["plan_response"]["status"]}\n[link]({artifact["plan_response"]["run_link"]})\n"
 
-    comment_json = wrap_json_markdown(json.dumps(artifact, indent=2))
+    comment_json = "Raw resposne:\n" + wrap_json_markdown(json.dumps(artifact, indent=2))
 
     try:
         pr.get_commits()
