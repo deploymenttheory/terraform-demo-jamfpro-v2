@@ -75,6 +75,7 @@ def get_pr():
 
         if pr:
             return pr
+    
 
 
     except GithubException as e:
@@ -124,8 +125,8 @@ def update_pr_with_text(pr: PullRequest):
     comment_json = wrap_json_markdown(artifact)
 
     try:
-        pr.create_comment(comment_preview)
-        pr.create_comment(comment_json)
+        pr.create_issue_comment(comment_preview)
+        pr.create_issue_comment(comment_json)
 
 
     except GithubException as e:
