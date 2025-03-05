@@ -119,14 +119,14 @@ def update_pr_with_text(pr: PullRequest):
     comment_preview = f"""
     Run Status: {artifact["plan_response"]["status"]}
     [link]({artifact["plan_response"]["run_link"]})
-    \n
+    \n\n
     """
 
     comment_json = wrap_json_markdown(artifact)
 
     try:
-        pr.create_issue_comment(comment_preview)
-        pr.create_issue_comment(comment_json)
+        pr.get_commits()
+        [pr.create_issue_comment(i) for i in [comment_preview, comment_json]]
 
 
     except GithubException as e:
