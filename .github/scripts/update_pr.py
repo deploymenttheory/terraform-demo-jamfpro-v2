@@ -115,16 +115,18 @@ def update_pr_with_text(pr: PullRequest):
     """
     artifact = open_artifact(ARTIFACT_PATH)
     
-    comments = f"""
+    comment_preview = f"""
     Run Status: {artifact["plan_response"]["status"]}
     [link]({artifact["plan_response"]["run_link"]})
     \n
     """
 
-    comments += wrap_json_markdown(artifact)
+    comment_json = wrap_json_markdown(artifact)
 
     try:
-        pr.create_issue_comment(comments)
+        pr.create_comment(comment_preview)
+        pr.create_comment(comment_json)
+
 
     except GithubException as e:
         print(f"Error adding comment: {e}")
