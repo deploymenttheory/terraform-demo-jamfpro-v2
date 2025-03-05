@@ -21,6 +21,7 @@ Author: Unknown
 import os
 import sys
 import github
+import json
 from github.GithubException import GithubException
 from github.PullRequest import PullRequest
 sys.path.append(".github/scripts")
@@ -114,7 +115,7 @@ def update_pr_with_text(pr: PullRequest):
         >>> pr = get_pr()
         >>> update_pr_with_text(pr)  # Adds formatted JSON comment(s) to PR
     """
-    artifact = open_artifact(ARTIFACT_PATH, formatted_string=True)
+    artifact = open_artifact(ARTIFACT_PATH)
     
     comment_preview = f"""
     Run Status: {artifact["plan_response"]["status"]}
@@ -122,7 +123,7 @@ def update_pr_with_text(pr: PullRequest):
     \n\n
     """
 
-    comment_json = wrap_json_markdown(artifact)
+    comment_json = wrap_json_markdown(json.dumps(artifact))
 
     try:
         pr.get_commits()
