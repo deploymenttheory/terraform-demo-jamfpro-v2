@@ -1,13 +1,13 @@
 variable "buildings" {
   default = {
-    # "london_eye" = {
-    #   street_address1 = "Riverside Building"
-    #   street_address2 = "County Hall"
-    #   city            = "London"
-    #   state_province  = "London"
-    #   zip_postal_code = "SE1 7PB"
-    #   country         = "United Kingdom"
-    # },
+    "london_eye" = {
+      street_address1 = "Riverside Building"
+      street_address2 = "County Hall"
+      city            = "London"
+      state_province  = "London"
+      zip_postal_code = "SE1 7PB"
+      country         = "United Kingdom"
+    },
     "apple_park" = {
       street_address1 = "The McIntosh Tree"
       street_address2 = "One Apple Park Way"
