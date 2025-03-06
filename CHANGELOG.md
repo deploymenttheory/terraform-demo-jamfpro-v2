@@ -5,6 +5,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.12.0](https://github.com/deploymenttheory/terraform-demo-jamfpro-v2/compare/v3.11.0...v3.12.0) (2025-03-06)
+
+
+### Features
+
+* new category: nannas house ([#118](https://github.com/deploymenttheory/terraform-demo-jamfpro-v2/issues/118)) ([b3c8b9a](https://github.com/deploymenttheory/terraform-demo-jamfpro-v2/commit/b3c8b9af997fd4a7359c645f2a7cc95871b52a50))
+
 ## [3.11.0](https://github.com/deploymenttheory/terraform-demo-jamfpro-v2/compare/v3.10.0...v3.11.0) (2025-03-06)
 
 
