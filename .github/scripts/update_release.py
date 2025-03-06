@@ -89,10 +89,9 @@ def get_and_update_release():
         raise
 
     file = open_artifact(ARTIFACT_PATH)
-    message = f"{release.body}\nApply Result: {file["status"]}"
     release.update_release(
-        name=release.tag_name,
-        message=message
+        name=" ".join([release.tag_name + f"Deploy Status: {file["status"]}"]),
+        message=release.body
     )
 
 
