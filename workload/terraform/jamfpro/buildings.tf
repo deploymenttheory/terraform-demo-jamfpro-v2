@@ -1,13 +1,13 @@
 variable "buildings" {
   default = {
-    # "london_eye" = {
-    #   street_address1 = "Riverside Building"
-    #   street_address2 = "County Hall"
-    #   city            = "London"
-    #   state_province  = "London"
-    #   zip_postal_code = "SE1 7PB"
-    #   country         = "United Kingdom"
-    # },
+    "london_eye" = {
+      street_address1 = "Riverside Building"
+      street_address2 = "County Hall"
+      city            = "London"
+      state_province  = "London"
+      zip_postal_code = "SE1 7PB"
+      country         = "United Kingdom"
+    },
     "apple_park" = {
       street_address1 = "The McIntosh Tree"
       street_address2 = "One Apple Park Way"
@@ -32,14 +32,14 @@ variable "buildings" {
       zip_postal_code = "SW11 8AL"
       country         = "United Kingdom"
     },
-    # "us_embassy" = {
-    #   street_address1 = "33 Nine Elms Ln - apple"
-    #   street_address2 = "Nine Elms"
-    #   city            = "London"
-    #   state_province  = "London"
-    #   zip_postal_code = "SW11 7US"
-    #   country         = "United Kingdom"
-    # },
+    "us_embassy" = {
+      street_address1 = "33 Nine Elms Ln - apple"
+      street_address2 = "Nine Elms"
+      city            = "London"
+      state_province  = "London"
+      zip_postal_code = "SW11 7US"
+      country         = "United Kingdom"
+    },
     "Cheese" = {
       street_address1 = "Cake"
       street_address2 = "Sausage"
