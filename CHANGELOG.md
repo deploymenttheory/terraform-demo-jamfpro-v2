@@ -5,6 +5,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.10.0](https://github.com/deploymenttheory/terraform-demo-jamfpro-v2/compare/v3.9.0...v3.10.0) (2025-03-06)
+
+
+### Features
+
+* cats ([aee75b0](https://github.com/deploymenttheory/terraform-demo-jamfpro-v2/commit/aee75b0c77613022e5354d7d77be577da3fbe9d6))
+* terraform diff ([45da95c](https://github.com/deploymenttheory/terraform-demo-jamfpro-v2/commit/45da95c84388bc9f7aa91a4ae1673f9bfa153e47))
+
+
+### Bug Fixes
+
+* token ([fcf32a3](https://github.com/deploymenttheory/terraform-demo-jamfpro-v2/commit/fcf32a341202bbb196d5cddb48bb7eefe5db53bd))
+
 ## [3.9.0](https://github.com/deploymenttheory/terraform-demo-jamfpro-v2/compare/v3.8.0...v3.9.0) (2025-03-06)
 
 
