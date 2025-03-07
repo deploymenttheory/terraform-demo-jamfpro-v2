@@ -5,6 +5,20 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.13.0](https://github.com/deploymenttheory/terraform-demo-jamfpro-v2/compare/v3.12.1...v3.13.0) (2025-03-07)
+
+
+### Features
+
+* added 2 packages after testing in sandbox ([#122](https://github.com/deploymenttheory/terraform-demo-jamfpro-v2/issues/122)) ([1e9c392](https://github.com/deploymenttheory/terraform-demo-jamfpro-v2/commit/1e9c3927e9eb8a9271664cc317454d62eb26ed4b))
+* added dock items load test ([#125](https://github.com/deploymenttheory/terraform-demo-jamfpro-v2/issues/125)) ([ba17e93](https://github.com/deploymenttheory/terraform-demo-jamfpro-v2/commit/ba17e93fb84cd1d4fa888ff9b634968fcd850cb6))
+* added smtp server and static user group ([#124](https://github.com/deploymenttheory/terraform-demo-jamfpro-v2/issues/124)) ([d840deb](https://github.com/deploymenttheory/terraform-demo-jamfpro-v2/commit/d840debc03bfdee62315930e6e93eef12dc8fa86))
+
+
+### Bug Fixes
+
+* removed broken thing' ([ada3414](https://github.com/deploymenttheory/terraform-demo-jamfpro-v2/commit/ada3414f109d7a4d55ad797f225f9e3177cad54f))
+
 ## [3.12.1](https://github.com/deploymenttheory/terraform-demo-jamfpro-v2/compare/v3.12.0...v3.12.1) (2025-03-07)
 
 
