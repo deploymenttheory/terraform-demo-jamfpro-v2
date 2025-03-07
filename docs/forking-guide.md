@@ -1,27 +1,26 @@
 # Guide for Forking this Repo
 
-This guide is for individuals with experience of the technologies in this demo. If you don't have that, don't worry! Please review the [Getting Started Guide](./docs/getting-started.md)
+This guide is for individuals with experience of the technologies in this demo. If you don't have that, don't worry! Please see the [Getting Started Guide](./docs/getting-started.md)
 
 ## Prerequisites
 You must have:
 1. A Jamf Pro API Integration with permissions in each of your route to live instances
-2. A Hashicorp Cloud Platform Terraform Org set up (it's free)
-3. A Terraform Project set up.
-4. 3 workspaces set up in that org and project:
+2. A Hashicorp Cloud Platform Terraform Org (it's free)
+3. A Terraform Project.
+4. 3 workspaces set up in that org and project, eg:
    - Sandbox
    - Staging
    - Production
 
-5. TF variables and secrets set up. You can set up a "Variable Set" for items shared between workspaces (like provider config).
+5. TF Cloud variables and secrets. You can set up a "Variable Set" for items shared between workspaces (like provider config).
    - Varibles must match the names seen in workload/terraform/jamfpro/backend.tf
-   - See [Getting Started](./docs/getting-started.md) for more info.
    
 
 ## Required Secrets
 
 ### GitHub Personal Access Token
 - **Secret Name:** `PAT_TOKEN`
-- **Description:** Required for Release Please to function correctly as it must use a separate identity to the GH actions. [GH Docs Page](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)
+- **Description:** Required for Release Please to function correctly as it must use a separate identity to the GH actions. In a real environment you'd use an APP for this job, but here a PAT token is fine.[GH Docs Page](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)
 - **Permissions:** Must have repository access
 
 ### Terraform Cloud User API Key

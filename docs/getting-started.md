@@ -66,17 +66,6 @@ terraform --version
 
 1. **Create a New Repository**: Start by forking or cloning this repository into your GitHub account. Ensure that you include all branches when you fork.
 
-**Optional: Clone and Push to Your New Repository**: If cloning then take a local copy of this repo and then push it to your newly created repository:
-
-```bash
-git clone https://github.com/deploymenttheory/terraform-demo-jamfpro.git
-cd terraform-demo-jamfpro
-git remote set-url origin https://github.com/your-username-or-org/your-new-repo.git
-git push -u origin main
-```
-
-Replace your-username and your-new-repo with your GitHub username and the name of your new repository.
-
 2. **Configure Terraform Cloud Workspaces**:
 
 To manage your Jamf Pro infrastructure across different environments, you'll need to set up a terraform cloud organization, project and 3 workspaces. You will require a seperate workspace for each jamf pro envionrment you want to manage with terraform.
@@ -147,7 +136,7 @@ Each workspace holds a unique state for the correlating jamf pro environment.
 - **Generate Terraform Cloud API token**:
 This token will be used by github actions to communicate with terraform cloud.
 
-Within TFC go to account settings -> tokens -> generate an api token
+Within TFC go to account settings -> tokens -> generate an api token -> user token
 
 Give this token a lifespan you are happy with and save it for later in use with github actions
 
@@ -191,8 +180,9 @@ provider "jamfpro" {
 
 It's strongly recommended to ensure that `jamfpro_load_balancer_lock` is set to true, to avoid any issues with the Jamf Cloud load balancer.
 
+## Pushing a change 
 
-6. **Create a New Branch**: When starting work on a new feature, bug fix, or any other change, create a new branch with an appropriate prefix. This naming convention is enforced by our workflows and helps categorize the type of work being done.
+1. **Create a New Branch**: When starting work on a new feature, bug fix, or any other change, create a new branch with an appropriate prefix. This naming convention is enforced by our workflows and helps categorize the type of work being done.
 
 Use one of the following prefixes based on the nature of your work:
 
@@ -201,13 +191,13 @@ Use one of the following prefixes based on the nature of your work:
 
 To create a new branch:
 
-1. Ensure you're on the default branch (sandbox) and it's up to date:
+2. Ensure you're on the default branch (main) and it's up to date:
    ```bash
-   git checkout sandbox
-   git pull origin sandbox
+   git checkout main
+   git pull
    ```
 
-2. Create and switch to a new branch with an appropriate prefix:
+3. Create and switch to a new branch with an appropriate prefix:
    ```bash
    git checkout -b prefix-branch-name
    ```
@@ -215,24 +205,23 @@ To create a new branch:
 
    For example:
    ```bash
-   git checkout -b feat-add-policy
+   git checkout -b feat-new-policy-xyz
    ```
 
-3. Make your changes on this new branch.
+4. Make your changes on this new branch.
 
-4. Push your branch to the remote repository:
+5. Push your branch to the remote repository:
    ```bash
    git push -u origin prefix-branch-name
    ```
 
 This naming convention helps our automated workflows identify the type of change and process it accordingly. It also makes it easier for team members to understand the purpose of each branch at a glance.
 
+6. **Test in Sandbox**: Use the Terraform CLI to test your changes against the sandbox environment. Make changes locally on your machine and use the terraform CLI to test them in your sandbox workspace.
 
-7. **Test in Sandbox**: Use the Terraform CLI to test your changes against the sandbox environment.
+7. **Push**: Push the tested changed to github to GitHub.
 
-8. **Make Changes and Push**: Make your changes and push to GitHub.
-
-9. **Promote to Staging(main)**: After testing your changes in your feature branch, you can promote them to the Staging environment. This process involves creating a pull request to merge your feature branch into the `main` branch. Here's how to do it:
+8. **Promote to Staging(main)**: After testing your changes in your feature branch, you can promote them to the Staging environment. This process involves creating a pull request to merge your feature branch into the `main` branch. Here's how to do it:
 
 - Ensure all your changes are committed and pushed to your feature branch.
 
@@ -248,14 +237,11 @@ This naming convention helps our automated workflows identify the type of change
 
 - Click "Create pull request".
 
-- Request a review from your team members if required by your team's process.
-
-- When the pull request is opened, a speculative (impossible to apply) plan is run and the output will be appended to your Pull Request. 
+- When the pull request is opened, a plan is run and the output will be appended to your Pull Request, detailing which changes will be made should you move forward. 
 
 - Once the pull request is approved, merge it into the `main` branch.
 
 - Once merged, Release Please (by Google) will add your changes to a Release branch and automatically determine your next [Semantic Versioning](semver.org) version.
-
 
 After merging:
 - The workflow will automatically start.
@@ -266,4 +252,4 @@ Remember: Always verify that the workflow completes successfully. If there are a
 
 By following this process, you ensure that your changes are properly promoted to the Sandbox environment and applied in a controlled, automated manner.
 
-10. **Promote to Production**: Now Merge the Release Please PR into your main branch to trigger a tag change. The tag change will automatically kick off another action which pushes your tagged changes into Production. 
+9. **Promote to Production**: Now Merge the Release Please PR into your main branch to trigger a tag change. The tag change will automatically kick off another action which pushes your tagged changes into Production. 
