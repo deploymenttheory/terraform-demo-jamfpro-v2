@@ -1,18 +1,18 @@
 # Terraform Demo for Jamf Pro V2
 
-This repository contains an **example** automated workflow for using Terraform to manage Jamf Pro configuration across multiple environments in a Route To Live (RTL) arrangement. We leverage the [Jamf Pro Terraform Provider](https://github.com/deploymenttheory/terraform-provider-jamfpro) Hashicorp Terraform Cloud Workspaces, Github Actions and  [Google Release please](https://github.com/googleapis/release-please) to automate the planning, application and release process of your changes - ensuring only tested, versioned and approved code reaches production in the same state it was tested in.
+This repository contains an **example** automated workflow for using Terraform to manage Jamf Pro configuration across multiple environments in a Route To Live (RTL) arrangement. We leverage the [Jamf Pro Terraform Provider](https://github.com/deploymenttheory/terraform-provider-jamfpro) Hashicorp Terraform Cloud Workspaces, Github Actions and  [Google Release please](https://github.com/googleapis/release-please) to automate the planning, application and release process of change - ensuring only tested, versioned and approved code reaches production in the same state it was tested in.
 
 
 ## Usage Guide
 
 For a comprehensive setup guide, see our [Getting Started Guide](./docs/getting-started.md).
 
-If you have used these technologies before and would just like the technical requirements and variable/secret definitions, please see the [Forking Guide](./docs/forking-guide.md).
+If you have used these technologies before and would just like the technical requirements including variable/secret definitions, please see the [Forking Guide](./docs/forking-guide.md).
 
 ## Repo Structure
 
-- Workflows, supporting scripts and configuration files can be found in the [.github/](./.github/) folder.
-- Terraform Workload (the configuration) can be found in the [workload/terraform/jamfpro](./workload/terraform/jamfpro/) folder.
+- Workflows, supporting scripts and configuration files can be found in the [.github/](./.github/) directory.
+- Terraform Workload (the configuration) can be found in the [workload/terraform/jamfpro](./workload/terraform/jamfpro/) directory.
 
 ## Workflow Overview and Notes
 

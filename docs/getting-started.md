@@ -144,17 +144,12 @@ Each workspace holds a unique state for the correlating jamf pro environment.
 
    d. Mark sensitive variables (like passwords and secrets) as sensitive.
 
-![tfc-workspace-vars](./media/screenshots/tfc-workspace-vars.png)
-
 - **Generate Terraform Cloud API token**:
 This token will be used by github actions to communicate with terraform cloud.
 
 Within TFC go to account settings -> tokens -> generate an api token
 
 Give this token a lifespan you are happy with and save it for later in use with github actions
-
-![tfc-tokens](./media/screenshots/tfc-tokens.png)
-
 
 3. **Configure Github Secrets**: Set up the following secrets in your GitHub repository settings:
 
@@ -247,9 +242,9 @@ This naming convention helps our automated workflows identify the type of change
 
 - Click the "New pull request" button.
 
-- Set the base branch to `main` and the compare branch to your feature branch.
+- Ensure the base branch is set to `main` and the compare branch to your feature branch.
 
-- Give your pull request a descriptive title and provide details about the changes in the description.
+- Give your pull request a descriptive title and provide details about the changes in the description. It MUST begin with feat, fix or chore followed by a colon. A good example would be: "feat: Added New HQ building"
 
 - Click "Create pull request".
 
