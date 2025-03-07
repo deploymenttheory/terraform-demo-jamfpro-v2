@@ -2,7 +2,7 @@
 # resource "jamfpro_smtp_server" "basic_auth" {
 #   enabled             = true
 #   authentication_type = "BASIC"
-  
+
 #   connection_settings {
 #     host               = "smtp.sendgrid.net"
 #     port               = 587
@@ -25,7 +25,7 @@
 resource "jamfpro_smtp_server" "graph_api" {
   enabled             = true
   authentication_type = "GRAPH_API"
-  
+
   sender_settings {
     email_address = "noreply@yourdomain.onmicrosoft.com"
   }
