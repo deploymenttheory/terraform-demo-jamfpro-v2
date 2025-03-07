@@ -5,6 +5,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.14.0](https://github.com/deploymenttheory/terraform-demo-jamfpro-v2/compare/v3.13.1...v3.14.0) (2025-03-07)
+
+
+### Features
+
+* added policy and building for citi ([#128](https://github.com/deploymenttheory/terraform-demo-jamfpro-v2/issues/128)) ([9286d50](https://github.com/deploymenttheory/terraform-demo-jamfpro-v2/commit/9286d50afcc1d09a46d74fe6c09105a5c4869575))
+
 ## [3.13.1](https://github.com/deploymenttheory/terraform-demo-jamfpro-v2/compare/v3.13.0...v3.13.1) (2025-03-07)
 
 
