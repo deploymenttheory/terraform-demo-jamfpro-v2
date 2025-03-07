@@ -24,7 +24,7 @@
 #   scope {
 #     all_computers = false
 #     all_jss_users = false
-#     building_ids  = [jamfpro_building.building["apple_park"].id]
+#     building_ids  = [jamfpro_building.building["citi_hq"].id]
 
 #   }
 
