@@ -1,7 +1,7 @@
 
 resource "jamfpro_dock_item" "jamfpro_dock_item_001" {
   count = 100
-  name  = format("tf-localtest-dockItem-loadtest-%03d", count.index + 1)
+  name  = format("tfc-dockItem-loadtest-%03d", count.index + 1)
   type  = "App"
   path  = "file://localhost/Applications/iTunes.app/"
 }
