@@ -41,7 +41,7 @@ variable "buildings" {
       country         = "United Kingdom"
     },
     "citi_hq" = {
-      street_address1 = "33 Canada Square"
+      street_address1 = "33 Canada Square q"
       street_address2 = "Canary Wharf"
       city            = "London"
       state_province  = "London"
