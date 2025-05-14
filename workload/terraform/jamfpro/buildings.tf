@@ -26,7 +26,7 @@ variable "buildings" {
     },
     "apple_battersea" = {
       street_address1 = "Ground Floor, Turbine Hall A, Circus Rd W, Nine Elms"
-      street_address2 = "Suite 1100"
+      street_address2 = "Suite 11020"
       city            = "London"
       state_province  = "London"
       zip_postal_code = "SW11 8AL"
