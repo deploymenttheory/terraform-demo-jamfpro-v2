@@ -1,3 +1,5 @@
+
+
 # resource "jamfpro_app_installer" "jamfpro_app_installer_adobe_lightroom_classic" {
 #   name            = "Adobe Lightroom Classic"
 #   enabled         = true
@@ -28,7 +30,7 @@
 #     description                    = "This is an example app deployment"
 
 #     categories {
-#       id       = "4158"
+#       id       =jamfpro_category.category["Engineering"].id
 #       featured = true
 #     }
 #   }
@@ -64,7 +66,7 @@
 #     description                     = "This is an example app deployment"
 
 #     categories {
-#       id       = "4158"
+#       id       =jamfpro_category.category["Engineering"].id
 #       featured = true
 #     }
 #   }
@@ -100,7 +102,7 @@
 #     description                     = "This is an example app deployment"
 
 #     categories {
-#       id       = "4158"
+#       id       =jamfpro_category.category["Engineering"].id
 #       featured = true
 #     }
 #   }
@@ -136,7 +138,7 @@
 #     description                     = "This is an example app deployment"
 
 #     categories {
-#       id       = "4158"
+#       id       =jamfpro_category.category["Engineering"].id
 #       featured = true
 #     }
 #   }
@@ -172,7 +174,7 @@
 #     description                     = "This is an example app deployment"
 
 #     categories {
-#       id       = "4158"
+#       id       =jamfpro_category.category["Engineering"].id
 #       featured = true
 #     }
 #   }
@@ -208,7 +210,7 @@
 #     description                     = "This is an example app deployment"
 
 #     categories {
-#       id       = "4158"
+#       id       =jamfpro_category.category["Engineering"].id
 #       featured = true
 #     }
 #   }
@@ -244,7 +246,7 @@
 #     description                     = "This is an example app deployment"
 
 #     categories {
-#       id       = "4158"
+#       id       =jamfpro_category.category["Engineering"].id
 #       featured = true
 #     }
 #   }
@@ -280,7 +282,7 @@
 #     description                     = "This is an example app deployment"
 
 #     categories {
-#       id       = "4158"
+#       id       =jamfpro_category.category["Engineering"].id
 #       featured = true
 #     }
 #   }
@@ -316,7 +318,7 @@
 #     description                     = "This is an example app deployment"
 
 #     categories {
-#       id       = "4158"
+#       id       =jamfpro_category.category["Engineering"].id
 #       featured = true
 #     }
 #   }
@@ -352,14 +354,14 @@
 #     description                     = "This is an example app deployment"
 
 #     categories {
-#       id       = "4158"
+#       id       =jamfpro_category.category["Engineering"].id
 #       featured = true
 #     }
 #   }
 # }
 
-# resource "jamfpro_app_installer" "jamfpro_app_installer_microsoft_remote_desktop_10" {
-#   name                = "Microsoft Remote Desktop 10"
+# resource "jamfpro_app_installer" "jamfpro_app_installer_microsoft_windows_app" {
+#   name                = "Microsoft Windows App"
 #   enabled             = true
 #   deployment_type     = "SELF_SERVICE"
 #   update_behavior     = "AUTOMATIC"
@@ -388,7 +390,7 @@
 #     description                     = "This is an example app deployment"
 
 #     categories {
-#       id       = "4158"
+#       id       =jamfpro_category.category["Engineering"].id
 #       featured = true
 #     }
 #   }
@@ -424,7 +426,7 @@
 #     description                     = "This is an example app deployment"
 
 #     categories {
-#       id       = "4158"
+#       id       =jamfpro_category.category["Engineering"].id
 #       featured = true
 #     }
 #   }
@@ -460,7 +462,7 @@
 #     description                     = "This is an example app deployment"
 
 #     categories {
-#       id       = "4158"
+#       id       =jamfpro_category.category["Engineering"].id
 #       featured = true
 #     }
 #   }
@@ -496,7 +498,7 @@
 #     description                     = "This is an example app deployment"
 
 #     categories {
-#       id       = "4158"
+#       id       =jamfpro_category.category["Engineering"].id
 #       featured = true
 #     }
 #   }
@@ -532,7 +534,7 @@
 #     description                     = "This is an example app deployment"
 
 #     categories {
-#       id       = "4158"
+#       id       =jamfpro_category.category["Engineering"].id
 #       featured = true
 #     }
 #   }
@@ -568,7 +570,7 @@
 #     description                     = "This is an example app deployment"
 
 #     categories {
-#       id       = "4158"
+#       id       =jamfpro_category.category["Engineering"].id
 #       featured = true
 #     }
 #   }
@@ -604,7 +606,7 @@
 #     description                     = "This is an example app deployment"
 
 #     categories {
-#       id       = "4158"
+#       id       =jamfpro_category.category["Engineering"].id
 #       featured = true
 #     }
 #   }
@@ -640,7 +642,7 @@
 #     description                     = "This is an example app deployment"
 
 #     categories {
-#       id       = "4158"
+#       id       =jamfpro_category.category["Engineering"].id
 #       featured = true
 #     }
 #   }
@@ -676,7 +678,7 @@
 #     description                     = "This is an example app deployment"
 
 #     categories {
-#       id       = "4158"
+#       id       =jamfpro_category.category["Engineering"].id
 #       featured = true
 #     }
 #   }
@@ -712,7 +714,7 @@
 #     description                     = "This is an example app deployment"
 
 #     categories {
-#       id       = "4158"
+#       id       =jamfpro_category.category["Engineering"].id
 #       featured = true
 #     }
 #   }
@@ -748,7 +750,7 @@
 #     description                     = "This is an example app deployment"
 
 #     categories {
-#       id       = "4158"
+#       id       =jamfpro_category.category["Engineering"].id
 #       featured = true
 #     }
 #   }
@@ -784,7 +786,7 @@
 #     description                     = "This is an example app deployment"
 
 #     categories {
-#       id       = "4158"
+#       id       =jamfpro_category.category["Engineering"].id
 #       featured = true
 #     }
 #   }
@@ -820,7 +822,7 @@
 #     description                     = "This is an example app deployment"
 
 #     categories {
-#       id       = "4158"
+#       id       =jamfpro_category.category["Engineering"].id
 #       featured = true
 #     }
 #   }
@@ -856,7 +858,7 @@
 #     description                     = "This is an example app deployment"
 
 #     categories {
-#       id       = "4158"
+#       id       =jamfpro_category.category["Engineering"].id
 #       featured = true
 #     }
 #   }
@@ -892,7 +894,7 @@
 #     description                     = "This is an example app deployment"
 
 #     categories {
-#       id       = "4158"
+#       id       =jamfpro_category.category["Engineering"].id
 #       featured = true
 #     }
 #   }
@@ -928,7 +930,7 @@
 #     description                     = "This is an example app deployment"
 
 #     categories {
-#       id       = "4158"
+#       id       =jamfpro_category.category["Engineering"].id
 #       featured = true
 #     }
 #   }
@@ -964,7 +966,7 @@
 #     description                     = "This is an example app deployment"
 
 #     categories {
-#       id       = "4158"
+#       id       =jamfpro_category.category["Engineering"].id
 #       featured = true
 #     }
 #   }
@@ -1000,7 +1002,7 @@
 #     description                     = "This is an example app deployment"
 
 #     categories {
-#       id       = "4158"
+#       id       =jamfpro_category.category["Engineering"].id
 #       featured = true
 #     }
 #   }
@@ -1036,7 +1038,7 @@
 #     description                     = "This is an example app deployment"
 
 #     categories {
-#       id       = "4158"
+#       id       =jamfpro_category.category["Engineering"].id
 #       featured = true
 #     }
 #   }
@@ -1072,7 +1074,7 @@
 #     description                     = "This is an example app deployment"
 
 #     categories {
-#       id       = "4158"
+#       id       =jamfpro_category.category["Engineering"].id
 #       featured = true
 #     }
 #   }
@@ -1108,7 +1110,7 @@
 #     description                     = "This is an example app deployment"
 
 #     categories {
-#       id       = "4158"
+#       id       =jamfpro_category.category["Engineering"].id
 #       featured = true
 #     }
 #   }
@@ -1144,7 +1146,7 @@
 #     description                     = "This is an example app deployment"
 
 #     categories {
-#       id       = "4158"
+#       id       =jamfpro_category.category["Engineering"].id
 #       featured = true
 #     }
 #   }
@@ -1180,7 +1182,7 @@
 #     description                     = "This is an example app deployment"
 
 #     categories {
-#       id       = "4158"
+#       id       =jamfpro_category.category["Engineering"].id
 #       featured = true
 #     }
 #   }
@@ -1216,7 +1218,7 @@
 #     description                     = "This is an example app deployment"
 
 #     categories {
-#       id       = "4158"
+#       id       =jamfpro_category.category["Engineering"].id
 #       featured = true
 #     }
 #   }
@@ -1252,7 +1254,7 @@
 #     description                     = "This is an example app deployment"
 
 #     categories {
-#       id       = "4158"
+#       id       =jamfpro_category.category["Engineering"].id
 #       featured = true
 #     }
 #   }
@@ -1288,7 +1290,7 @@
 #     description                     = "This is an example app deployment"
 
 #     categories {
-#       id       = "4158"
+#       id       =jamfpro_category.category["Engineering"].id
 #       featured = true
 #     }
 #   }
@@ -1324,7 +1326,7 @@
 #     description                     = "This is an example app deployment"
 
 #     categories {
-#       id       = "4158"
+#       id       =jamfpro_category.category["Engineering"].id
 #       featured = true
 #     }
 #   }
@@ -1360,7 +1362,7 @@
 #     description                     = "This is an example app deployment"
 
 #     categories {
-#       id       = "4158"
+#       id       =jamfpro_category.category["Engineering"].id
 #       featured = true
 #     }
 #   }
@@ -1396,7 +1398,7 @@
 #     description                     = "This is an example app deployment"
 
 #     categories {
-#       id       = "4158"
+#       id       =jamfpro_category.category["Engineering"].id
 #       featured = true
 #     }
 #   }
@@ -1432,7 +1434,7 @@
 #     description                     = "This is an example app deployment"
 
 #     categories {
-#       id       = "4158"
+#       id       =jamfpro_category.category["Engineering"].id
 #       featured = true
 #     }
 #   }
@@ -1468,7 +1470,7 @@
 #     description                     = "This is an example app deployment"
 
 #     categories {
-#       id       = "4158"
+#       id       =jamfpro_category.category["Engineering"].id
 #       featured = true
 #     }
 #   }
@@ -1504,7 +1506,7 @@
 #     description                     = "This is an example app deployment"
 
 #     categories {
-#       id       = "4158"
+#       id       =jamfpro_category.category["Engineering"].id
 #       featured = true
 #     }
 #   }
@@ -1540,7 +1542,7 @@
 #     description                     = "This is an example app deployment"
 
 #     categories {
-#       id       = "4158"
+#       id       =jamfpro_category.category["Engineering"].id
 #       featured = true
 #     }
 #   }
@@ -1576,7 +1578,7 @@
 #     description                     = "This is an example app deployment"
 
 #     categories {
-#       id       = "4158"
+#       id       =jamfpro_category.category["Engineering"].id
 #       featured = true
 #     }
 #   }
@@ -1612,7 +1614,7 @@
 #     description                     = "This is an example app deployment"
 
 #     categories {
-#       id       = "4158"
+#       id       =jamfpro_category.category["Engineering"].id
 #       featured = true
 #     }
 #   }
@@ -1648,7 +1650,7 @@
 #     description                     = "This is an example app deployment"
 
 #     categories {
-#       id       = "4158"
+#       id       =jamfpro_category.category["Engineering"].id
 #       featured = true
 #     }
 #   }
@@ -1684,7 +1686,7 @@
 #     description                     = "This is an example app deployment"
 
 #     categories {
-#       id       = "4158"
+#       id       =jamfpro_category.category["Engineering"].id
 #       featured = true
 #     }
 #   }
@@ -1720,7 +1722,7 @@
 #     description                     = "This is an example app deployment"
 
 #     categories {
-#       id       = "4158"
+#       id       =jamfpro_category.category["Engineering"].id
 #       featured = true
 #     }
 #   }
@@ -1756,7 +1758,7 @@
 #     description                     = "This is an example app deployment"
 
 #     categories {
-#       id       = "4158"
+#       id       =jamfpro_category.category["Engineering"].id
 #       featured = true
 #     }
 #   }
@@ -1792,7 +1794,7 @@
 #     description                     = "This is an example app deployment"
 
 #     categories {
-#       id       = "4158"
+#       id       =jamfpro_category.category["Engineering"].id
 #       featured = true
 #     }
 #   }
@@ -1828,7 +1830,7 @@
 #     description                     = "This is an example app deployment"
 
 #     categories {
-#       id       = "4158"
+#       id       =jamfpro_category.category["Engineering"].id
 #       featured = true
 #     }
 #   }
@@ -1864,7 +1866,7 @@
 #     description                     = "This is an example app deployment"
 
 #     categories {
-#       id       = "4158"
+#       id       =jamfpro_category.category["Engineering"].id
 #       featured = true
 #     }
 #   }
@@ -1900,7 +1902,7 @@
 #     description                     = "This is an example app deployment"
 
 #     categories {
-#       id       = "4158"
+#       id       =jamfpro_category.category["Engineering"].id
 #       featured = true
 #     }
 #   }
@@ -1936,7 +1938,7 @@
 #     description                     = "This is an example app deployment"
 
 #     categories {
-#       id       = "4158"
+#       id       =jamfpro_category.category["Engineering"].id
 #       featured = true
 #     }
 #   }
@@ -1972,7 +1974,7 @@
 #     description                     = "This is an example app deployment"
 
 #     categories {
-#       id       = "4158"
+#       id       =jamfpro_category.category["Engineering"].id
 #       featured = true
 #     }
 #   }
@@ -2008,7 +2010,7 @@
 #     description                     = "This is an example app deployment"
 
 #     categories {
-#       id       = "4158"
+#       id       =jamfpro_category.category["Engineering"].id
 #       featured = true
 #     }
 #   }
@@ -2044,7 +2046,7 @@
 #     description                     = "This is an example app deployment"
 
 #     categories {
-#       id       = "4158"
+#       id       =jamfpro_category.category["Engineering"].id
 #       featured = true
 #     }
 #   }
@@ -2080,7 +2082,7 @@
 #     description                     = "This is an example app deployment"
 
 #     categories {
-#       id       = "4158"
+#       id       =jamfpro_category.category["Engineering"].id
 #       featured = true
 #     }
 #   }
@@ -2116,7 +2118,7 @@
 #     description                     = "This is an example app deployment"
 
 #     categories {
-#       id       = "4158"
+#       id       =jamfpro_category.category["Engineering"].id
 #       featured = true
 #     }
 #   }
@@ -2152,7 +2154,7 @@
 #     description                     = "This is an example app deployment"
 
 #     categories {
-#       id       = "4158"
+#       id       =jamfpro_category.category["Engineering"].id
 #       featured = true
 #     }
 #   }
@@ -2188,7 +2190,7 @@
 #     description                     = "This is an example app deployment"
 
 #     categories {
-#       id       = "4158"
+#       id       =jamfpro_category.category["Engineering"].id
 #       featured = true
 #     }
 #   }
@@ -2224,7 +2226,7 @@
 #     description                     = "This is an example app deployment"
 
 #     categories {
-#       id       = "4158"
+#       id       =jamfpro_category.category["Engineering"].id
 #       featured = true
 #     }
 #   }
@@ -2260,7 +2262,7 @@
 #     description                     = "This is an example app deployment"
 
 #     categories {
-#       id       = "4158"
+#       id       =jamfpro_category.category["Engineering"].id
 #       featured = true
 #     }
 #   }
