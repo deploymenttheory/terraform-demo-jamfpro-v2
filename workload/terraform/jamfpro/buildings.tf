@@ -47,6 +47,14 @@ variable "buildings" {
       state_province  = "London"
       zip_postal_code = "E14 5LB"
       country         = "United Kingdom"
+    },
+    "test_mc_test_face" = {
+      street_address1 = "33 Canada Square cheese"
+      street_address2 = "Canary Wharf"
+      city            = "London"
+      state_province  = "London"
+      zip_postal_code = "E14 5LB"
+      country         = "United Kingdom"
     }
   }
 }

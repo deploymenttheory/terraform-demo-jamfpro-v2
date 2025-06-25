@@ -1,10 +1,10 @@
 
-resource "jamfpro_dock_item" "jamfpro_dock_item_001" {
-  count = 100
-  name  = format("tfc-dockItem-loadtest-%03d", count.index + 1)
-  type  = "App"
-  path  = "file://localhost/Applications/iTunes.app/"
-}
+# resource "jamfpro_dock_item" "jamfpro_dock_item_001" {
+#   count = 100
+#   name  = format("tfc-dockItem-loadtest-%03d", count.index + 1)
+#   type  = "App"
+#   path  = "file://localhost/Applications/iTunes.app/"
+# }
 
 // File Dock Item Example
 resource "jamfpro_dock_item" "jamfpro_dock_item_002" {
