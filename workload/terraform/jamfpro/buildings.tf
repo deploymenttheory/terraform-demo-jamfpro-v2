@@ -40,14 +40,14 @@ variable "buildings" {
       zip_postal_code = "SW11 7US"
       country         = "United Kingdom"
     },
-    # "jamf_london" = {
-    #   street_address1 = "7-10 Chandos St"
-    #   street_address2 = "Marylebone"
-    #   city = "London"
-    #   state_province = "London"
-    #   zip_postal_code = "W1G 9DQ"
-    #   country = "United Kingdom"
-    # }
+    "jamf_london" = {
+      street_address1 = "7-10 Chandos St"
+      street_address2 = "Marylebone"
+      city = "London"
+      state_province = "London"
+      zip_postal_code = "W1G 9DQ"
+      country = "United Kingdom"
+    }
   }
 }
 
