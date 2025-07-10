@@ -24,7 +24,7 @@ resource "jamfpro_policy" "jamfpro_policy_demo" {
   scope {
     all_computers = false
     all_jss_users = false
-    building_ids  = [jamfpro_building.building["citi_hq"].id]
+    building_ids  = [jamfpro_building.building["us_embassy"].id]
 
   }
 
