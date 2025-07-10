@@ -13,7 +13,7 @@ resource "jamfpro_policy" "jamfpro_policy_demo" {
   notify_on_each_failed_retry   = false
   target_drive                  = "/"
   offline                       = false
-  category_id                   = jamfpro_category.category["Aerospace"]
+  category_id                   = -1 
   site_id                       = -1
 
   network_limitations {
