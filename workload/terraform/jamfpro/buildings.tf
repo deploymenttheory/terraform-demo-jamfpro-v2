@@ -40,22 +40,14 @@ variable "buildings" {
       zip_postal_code = "SW11 7US"
       country         = "United Kingdom"
     },
-    "citi_hq" = {
-      street_address1 = "33 Canada Square q"
-      street_address2 = "Canary Wharf"
-      city            = "London"
-      state_province  = "London"
-      zip_postal_code = "E14 5LB"
-      country         = "United Kingdom"
-    },
-    "test_mc_test_face" = {
-      street_address1 = "33 Canada Square cheese"
-      street_address2 = "Canary Wharf"
-      city            = "London"
-      state_province  = "London"
-      zip_postal_code = "E14 5LB"
-      country         = "United Kingdom"
-    }
+    # "jamf_london" = {
+    #   street_address1 = "7-10 Chandos St"
+    #   street_address2 = "Marylebone"
+    #   city = "London"
+    #   state_province = "London"
+    #   zip_postal_code = "W1G 9DQ"
+    #   country = "United Kingdom"
+    # }
   }
 }
 
